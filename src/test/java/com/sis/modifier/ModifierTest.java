@@ -1,11 +1,11 @@
-package sis.log4j;
+package com.sis.modifier;
 
 /**
- * @ClassName: Log4jTest
+ * @ClassName: ModifierTest
  * @Description: TODO
  * @Author: Sissi
  * @Date: 2022/4/1 15:40
  * @Version: 1.0
  */
-public class Log4jTest {
+public class ModifierTest {
 }

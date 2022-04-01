@@ -1,11 +1,11 @@
-package sis.modifier;
+package com.sis.iterator;
 
 /**
- * @ClassName: ModifierTest
+ * @ClassName: IteratorTest
  * @Description: TODO
  * @Author: Sissi
  * @Date: 2022/4/1 15:40
  * @Version: 1.0
  */
-public class ModifierTest {
+public class IteratorTest {
 }

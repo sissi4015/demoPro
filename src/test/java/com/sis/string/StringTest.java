@@ -1,4 +1,4 @@
-package sis.string;
+package com.sis.string;
 
 /**
  * @ClassName: StringTest

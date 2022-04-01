@@ -1,4 +1,4 @@
-package sis.multithreading;
+package com.sis.multithreading;
 
 /**
  * @ClassName: MultithreadingTest

@@ -1,4 +1,4 @@
-package sis.array;
+package com.sis.array;
 
 /**
  * @ClassName: ArrayTest

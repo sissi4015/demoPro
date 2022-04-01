@@ -1,4 +1,4 @@
-package sis.multithreading.list;
+package com.sis.multithreading.list;
 
 /**
  * @ClassName: MultiListTest

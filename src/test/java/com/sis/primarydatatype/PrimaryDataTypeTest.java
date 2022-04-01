@@ -1,4 +1,4 @@
-package sis.primarydatatype;
+package com.sis.primarydatatype;
 
 /**
  * @ClassName: PrimaryDataTypeTest

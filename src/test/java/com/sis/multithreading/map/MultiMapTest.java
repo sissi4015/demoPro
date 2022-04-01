@@ -1,11 +1,11 @@
-package sis.set;
+package com.sis.multithreading.map;
 
 /**
- * @ClassName: SetTest
+ * @ClassName: MultiMapTest
  * @Description: TODO
  * @Author: Sissi
  * @Date: 2022/4/1 15:42
  * @Version: 1.0
  */
-public class SetTest {
+public class MultiMapTest {
 }
