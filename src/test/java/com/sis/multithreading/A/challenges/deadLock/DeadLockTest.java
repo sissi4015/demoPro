@@ -1,4 +1,4 @@
-package com.sis.multithreading.deadLock;
+package com.sis.multithreading.A.challenges.deadLock;
 
 /**
  * @ClassName: DeadLockTest

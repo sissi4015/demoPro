@@ -1,0 +1,34 @@
+《Java并发编程的艺术》
+
+第二章 Java并发机制的底层实现原理
+
+2.2 synchronized的实现原理和应用
+
+重点4：synchronized锁存放在Java对象头中。
+
+        在32位虚拟机中，
+        1字宽（Word）= 4字节（byte）= 32位（bit）
+
+        对象是数组：JVM用3字宽存储对象头，分别为：Mark Word（对象的hashcode和锁信息）、对象类型数据的指针、数组长度
+        对象是非数组：JVM用2字宽存储对象头，分别为：Mark Word、对象类型数据的指针
+
+        !!!Mark Word默认存储结构：
+            锁状态（无锁）、对象的hashcode（25bit）、对象分代年龄（4bit）、是否偏向锁（1bit）、锁标志位（2bit）
+
+        Mark Word的存储的数据会随着锁标志位的变化而变化，状态变化如下：
+
+        32位虚拟机：
+            锁状态     25bit               4bit        1bit        2bit
+            轻量级锁    指向栈中锁记录的指针                            00
+            重量级锁    指向互斥量（重量级锁）的指针                      10
+            GC标记     空                                           11
+            偏向锁     线程ID   Epoch      对象分代年龄    1            01
+
+        64位虚拟机
+            锁状态     25bit       31bit         1bit       4bit    偏向锁(1bit)    锁标志位(2bit)
+            无锁       unused      hashcode     cms_free   分代年龄    0              01
+            偏向锁     线程ID(54bit)Epoch(2bit)  cms_free   分代年龄    1              01
+
+
+
+

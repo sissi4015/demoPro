@@ -1,4 +1,4 @@
-package com.sis.multithreading.contextSwitch;
+package com.sis.multithreading.A.challenges.contextSwitch;
 
 /**
  * @ClassName: ContextSwitch
